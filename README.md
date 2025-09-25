@@ -2,7 +2,19 @@
 
 This dbt project extracts, transforms, and normalizes clinical trial data from raw JSON structures in Snowflake. It focuses on interventional studies in Phase 2 and Phase 3, with sponsor classification and trial metadata enrichment.
 
-## Folder Layout
+## ELT - clinical_dataload_pipeline.ipynb
+ELT is perfomed using google colab notebook using below important libraries:
+1. api is accessed using requests module
+2. free trail snowflake connected using snowflake.connector module
+3. Pandas & json modules used for data pull and load (with no logic or transformation).
+
+## tools Used:
+1. DBT - Used Free Trial version of DBT cloud
+2. snowflake - Used Free Trial version
+3. Python IDE - google Colab
+
+
+## DBT Folder Layout
 
 - `models/clinical_data_studies/normalized_phase2_3_interventional.sql`: Core dbt models for filtering:
 - 1. FirstSubmitDate : greater than 2015-01-01
