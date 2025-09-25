@@ -1,0 +1,11 @@
+version: 2
+
+models:
+    - name: clinical_data_normalized_phase2_3_interventional
+      description: "Mormalized Json data & added filters"
+      columns:
+          - name: nct_id
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null
